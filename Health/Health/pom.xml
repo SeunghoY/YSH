@@ -5,6 +5,7 @@
 	<groupId>Health</groupId>
 	<artifactId>Health</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
 	<name>HEALTH123</name>
 	<url>http://maven.apache.org</url>
 
@@ -14,23 +15,31 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>3.1.0</version>
-			<scope>test</scope>
+			<dependency>
+				<groupId>javax.servlet</groupId>
+				<artifactId>javax.servlet-api</artifactId>
+				<version>3.1.0</version>
+				<scope>provided</scope>
+			</dependency>
 		</dependency>
 	</dependencies>
 	<build>
-	<defaultGoal>install</defaultGoal>
-	<sourceDirectory>src</sourceDirectory>
+		<defaultGoal>install</defaultGoal>
+		<sourceDirectory>src</sourceDirectory>
 		<plugins>
 			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.7.0</version>
+				<version>3.8.1</version>
 				<configuration>
 					<source>19</source>
 					<target>19</target>
 				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>3.2.2</version>
 			</plugin>
 		</plugins>
 	</build>
