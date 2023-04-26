@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Health/src/main/java"/>
+	<classpathentry kind="lib" path="Health/bin/src/main/webapp/WEB-INF/lib/jstl-1.2.jar"/>
+	<classpathentry kind="lib" path="Health/bin/src/main/webapp/WEB-INF/lib/ojdbc8.jar"/>
+	<classpathentry kind="lib" path="Health/src/main/webapp/WEB-INF/lib/jstl-1.2.jar"/>
+	<classpathentry kind="lib" path="Health/src/main/webapp/WEB-INF/lib/ojdbc8.jar"/>
+	<classpathentry kind="output" path="Health/build/classes"/>
+</classpath>
